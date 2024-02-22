@@ -1,0 +1,14 @@
+.GeneratorJson{
+    display: flex;
+    justify-content: center;
+}
+.TextImputsButton{
+    display: flex;
+}
+.TextImputs{
+    display: flex;
+    align-items: center;
+}
+.AddButton{
+    height: 20px;
+}

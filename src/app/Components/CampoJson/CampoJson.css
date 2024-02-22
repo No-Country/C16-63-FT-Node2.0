@@ -1,0 +1,11 @@
+.GeneratorJson{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FieldType{
+    display: grid;
+}
+.FieldName{
+    display: grid;
+}

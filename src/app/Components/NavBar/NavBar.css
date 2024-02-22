@@ -1,0 +1,25 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5%;
+    margin-right: 2%;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.eraSON{
+    color: white;
+    font-size: 25px;
+    margin-left: 5%;
+}
+.GJ{
+    width: 50px;
+    margin-left: 2.5%;
+}
+.NameLogo{
+    display: flex;
+    align-items: center;
+}
+.LogIn{
+    display: flex;
+    justify-content: flex-end;
+}

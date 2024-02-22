@@ -1,0 +1,32 @@
+.CardsAndText{
+    margin-top: 10%;
+}
+.OverAllText1{
+    color: #ECEDEE;
+    font-size: 40px;
+    padding-left: 15%;
+    padding-right: 70px;
+    margin-bottom: 10px;
+}
+.OverAllText2{
+    color: #92929A;
+    font-size: 20px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    text-align: justify;
+}
+.TxtImg{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.GJCard{
+    width: 400px;
+    margin-left: 15%;
+}
+.TextOnHome{
+    width: 49%;
+
+}
