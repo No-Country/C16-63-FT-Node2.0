@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavBar from "./Components/NavBar/NavBar";
 import AllCards from "./Components/Cards";
+import { LandingTxt } from "./Components/LandingTxt/LandingTxt";
 import { Generator } from "./Components/Generator/Generator";
 
 export default function Home() {
@@ -8,8 +9,9 @@ export default function Home() {
     <main className="">
       <div className="App">
         <NavBar />
-        <AllCards />
+        <LandingTxt/>
         <Generator />
+        <AllCards />
       </div>
     </main>
   );
