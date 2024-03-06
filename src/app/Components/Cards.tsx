@@ -13,7 +13,7 @@ export default function AllCards() {
   return (
     <div className="mt-[2.5%] ">
       
-      <div className="flex justify-center mb-[25px] sm:flex-col sm:items-center ">
+      <div className="flex xl:flex-row justify-center mb-[25px] sm:flex-col sm:items-center ">
         <Card
           svg={<FaBolt />}
           title="Rapido"
