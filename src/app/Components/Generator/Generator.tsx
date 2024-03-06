@@ -3,16 +3,24 @@
 "use client";
 
 import React, { useState } from 'react';
-import jsonData from '../../../../public/JsonData.json';
+import jsonData  from '../../../../public/JsonData.json';
 import Image from "next/image";
 import gJeneraSON from "../../../../assets/gJeneraSon.png";
 
+// Definir una interfaz para el tipo de datos en JsonData.json
+interface JsonDataType {
+  [key: string]: string[];
+}
+
+interface FilteredDataType {
+  [key: string]: string[];
+}
 
 const Generator = () => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
-
-  const handleCategoryChange = (e) => {
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [filteredData, setFilteredData] = useState<FilteredDataType[]>([]);
+  const typedJsonData : JsonDataType = jsonData
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = e.target;
     if (checked) {
       setSelectedCategories((prevCategories) => [...prevCategories, value]);
@@ -24,12 +32,14 @@ const Generator = () => {
   };
 
   const handleSearch = () => {
-    const filteredResults = Object.keys(jsonData)
-      .filter((category) => selectedCategories.includes(category))
-      .map((category) => ({ [category]: jsonData[category] }));
+    const filteredResults: FilteredDataType[] = selectedCategories.map((category: string) => ({
+      [category]: typedJsonData[category]
+    }));
     setFilteredData(filteredResults);
   };
+  
 
+  
   return (
     <div className='flex justify-center'>
       <div>      
