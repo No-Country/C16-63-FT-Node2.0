@@ -12,8 +12,10 @@ const styles = {
     padding: "10px",
     borderRadius: "5px",
     overflow: "auto",
-    maxHeight: "300px",
+    maxHeight: "315px",
+    height: "315px",
     width: "550px",
+    marginLeft:"15px",
   },
   code: {
     fontFamily: "monospace",
